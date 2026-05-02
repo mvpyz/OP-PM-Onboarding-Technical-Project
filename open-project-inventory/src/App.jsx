@@ -19,7 +19,7 @@ export default function App() {
 
   const fetchInventory = async () => {
     try {
-      const response = await fetch("http://localhost:3000/inventory");
+      const response = await fetch("https://op-pm-onboarding-technical-project.onrender.com/inventory");
       const data = await response.json();
       setInventory(data); 
     } catch (error) {
